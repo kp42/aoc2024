@@ -1,7 +1,20 @@
+use crate::Represent;
+
 #[derive(Debug, Default)]
 pub struct Day1 {
     left: Vec<usize>,
     right: Vec<usize>,
+}
+
+impl Represent for Day1 {
+    fn get_result(&self) {
+        println!("----------");
+        println!("Day 1");
+        println!("----------");
+        println!("Part 1: {:#?}", self.part1());
+        println!("Part 2: {:#?}", self.part2());
+        println!("----------");
+    }
 }
 
 impl From<&str> for Day1 {
